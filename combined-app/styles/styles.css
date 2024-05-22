@@ -15,6 +15,7 @@ body {
 
 header {
   background-color: var(--secondary-color);
+  
   padding: 1rem;
 }
 
@@ -25,6 +26,7 @@ header .container {
 }
 
 header h1 {
+
   margin: 0;
 }
 
@@ -38,6 +40,7 @@ nav ul {
 
 nav a {
   color: #fff;
+  padding-left: 30px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -63,6 +66,7 @@ main .container {
 
 .movie-grid {
   display: flex;
+  margin: 40px 0 40px 0;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
@@ -194,9 +198,9 @@ footer .social a {
 
 footer {
   background-color: var(--secondary-color);
+  margin-top: 45px;
   padding: 1rem 0;
   width: 100%;
-  position: fixed;
    bottom: 0;
   text-align: center;
 }
