@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to our Movie App. Discover the latest movies and ratings." />
+  <title>Movie App</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/slider.css" />
+  <!-- Add favicon link here -->
+</head>
+<body>
+  <div class="wrapper">
     <header>
       <div class="container">
         <h1>Movie App</h1>
@@ -22,43 +26,48 @@
       <div class="container">
         <section class="welcome">
           <h2>Welcome to our Movie App</h2>
+          <!-- Add a brief introduction or call-to-action here -->
         </section>
         <section class="featured">
           <h2>Featured Movies</h2>
-          <div class="movie-grid">
-            <div class="movie">
-              <img src="images/image1.jpg" alt="Movie 1" />
-              <div class="movie-info">
-                <h3>Movie Title 1</h3>
-                <span class="green">9.0</span>
+          <div class="slider">
+            <div class="slider-inner">
+              <div class="movie">
+                <img src="images/image1.jpg" alt="Movie 1" />
+                <div class="movie-info">
+                  <h3>Movie Title 1</h3>
+                  <span class="green">9.0</span>
+                </div>
+                <div class="overview">
+                  <h3>Overview</h3>
+                  <p>Brief description of Movie 1.</p>
+                </div>
               </div>
-              <div class="overview">
-                <h3>Overview</h3>
-                <p>Brief description of Movie 1.</p>
+              <div class="movie">
+                <img src="images/image2.jpg" alt="Movie 2" />
+                <div class="movie-info">
+                  <h3>Movie Title 2</h3>
+                  <span class="orange">7.5</span>
+                </div>
+                <div class="overview">
+                  <h3>Overview</h3>
+                  <p>Brief description of Movie 2.</p>
+                </div>
+              </div>
+              <div class="movie">
+                <img src="images/image3.jpg" alt="Movie 3" />
+                <div class="movie-info">
+                  <h3>Movie Title 3</h3>
+                  <span class="red">5.0</span>
+                </div>
+                <div class="overview">
+                  <h3>Overview</h3>
+                  <p>Brief description of Movie 3.</p>
+                </div>
               </div>
             </div>
-            <div class="movie">
-              <img src="images/image2.jpg" alt="Movie 2" />
-              <div class="movie-info">
-                <h3>Movie Title 2</h3>
-                <span class="orange">7.5</span>
-              </div>
-              <div class="overview">
-                <h3>Overview</h3>
-                <p>Brief description of Movie 2.</p>
-              </div>
-            </div>
-            <div class="movie">
-              <img src="images/image3.jpg" alt="Movie 3" />
-              <div class="movie-info">
-                <h3>Movie Title 3</h3>
-                <span class="red">5.0</span>
-              </div>
-              <div class="overview">
-                <h3>Overview</h3>
-                <p>Brief description of Movie 3.</p>
-              </div>
-            </div>
+            <button class="prev">&laquo;</button>
+            <button class="next">&raquo;</button>
           </div>
         </section>
       </div>
@@ -73,5 +82,7 @@
         </div>
       </div>
     </footer>
-  </body>
+  </div>
+  <script src="scripts/slider.js"></script>
+</body>
 </html>
