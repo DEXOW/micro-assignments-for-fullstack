@@ -54,15 +54,6 @@ main .container {
   align-items: center;
 }
 
-.welcome {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.featured {
-  text-align: center;
-}
-
 .movie-grid {
   display: flex;
   flex-wrap: wrap;

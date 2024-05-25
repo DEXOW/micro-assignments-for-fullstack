@@ -1,0 +1,89 @@
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.featured {
+    text-align: center;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.grid .card {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.grid .card img {
+    width: 100%;
+}
+
+.grid .card-info {
+    padding: 0.5rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .card-info h3 {
+    margin: 0;
+}
+
+.grid .card-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.grid .card-info span.green {
+    color: lightgreen;
+}
+
+.grid .card-info span.orange {
+    color: orange;
+}
+
+.grid .card-info span.red {
+    color: red;
+}
+
+.grid .card-overview {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    text-align: left;
+    padding: 2rem;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.grid .card-overview h3 {
+    margin: 0;
+}
+
+.grid .card-overview p {
+    margin: 0;
+}
+
+.grid .card-overview span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.grid .card:hover .card-overview {
+    transform: translateY(-20%);
+    transition: transform 0.3s ease-in;
+}

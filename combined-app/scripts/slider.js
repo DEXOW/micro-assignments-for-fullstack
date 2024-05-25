@@ -7,15 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     next.addEventListener('click', () => {
       if (index < 2) {
         index++;
-        slider.style.transform = `translateX(-${index * 100}%)`;
+      } else {
+        index = 0;
       }
+      slider.style.transform = `translateX(-${index * 100}%)`;
     });
   
     prev.addEventListener('click', () => {
       if (index > 0) {
         index--;
-        slider.style.transform = `translateX(-${index * 100}%)`;
+      } else {
+        index = 2;
       }
+      slider.style.transform = `translateX(-${index * 100}%)`;
     });
   });
   
