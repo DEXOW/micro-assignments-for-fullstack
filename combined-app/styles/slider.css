@@ -1,59 +1,59 @@
 .slider {
   position: relative;
-  width: 100%;
   overflow: hidden;
+  /* width: 100vw; */
 }
 
 .slider-inner {
+  width: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 500px;
 }
-
-.movie {
+ 
+.item {
   min-width: 100%;
   background-color: var(--secondary-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
   border-radius: 3px;
 }
 
-.movie img {
-  width: 100%;
-  height: auto; /* Ensure the images are not resized */
+.item img {
+  width: auto;
+  height: 500px;
 }
 
-.movie-info {
+.item-info {
   padding: 0.5rem 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.movie-info h3 {
+.item-info h3 {
   margin: 0;
 }
 
-.movie-info span {
+.item-info span {
   background-color: var(--primary-color);
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: bold;
 }
 
-.movie-info span.green {
+.item-info span.green {
   color: lightgreen;
 }
 
-.movie-info span.orange {
+.item-info span.orange {
   color: orange;
 }
 
-.movie-info span.red {
+.item-info span.red {
   color: red;
 }
 
-.overview {
+.item-overview {
   position: absolute;
   text-align: left;
   padding: 2rem;
@@ -64,12 +64,12 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.overview h3 {
+.item-overview h3 {
   text-align: left;
   margin-top: 0;
 }
 
-.movie:hover .overview {
+.item:hover .item-overview {
   transform: translateY(-100%);
 }
 
